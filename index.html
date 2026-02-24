@@ -1,482 +1,959 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vCard - Personal Portfolio</title>
-
-    <!--
-      - favicon
-    -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.ico"
-      type="image/x-icon"
-    />
-
-    <!--
-      - custom css link
-    -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <!--
-      - google font link
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <!--
-      - #MAIN
-    -->
-
-    <main>
-      <!--
-        - #SIDEBAR
-      -->
-
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar.png"
-              alt="Richard hanrick"
-              width="80"
-            />
-          </figure>
-
-          <div class="info-content">
-            <h1 class="name" title="Richard hanrick">Anshi</h1>
-
-            <p class="title">Software developer</p>
-          </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-        </div>
-
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:anshi.negi2000@gmail.com" class="contact-link"
-                  >anshi.negi2000@gmail.com</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="2003-07-23">July 23, 2003</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Dehradun,Uttarakhand</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com/in/anshi-negi/"
-                class="social-link"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="https://github.com/Anshi2003" class="social-link">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!--
-        - #main-content
-      -->
-
-      <div class="main-content">
-        <!--
-          - #NAVBAR
-        -->
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Projects</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
-          </ul>
-        </nav>
-
-        <!--
-          - #ABOUT
-        -->
-
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-
-          <section class="about-text">
-            <p>
-              Hi, I'm Anshi! I'm currently pursuing my Master's in Computer
-              Applications at Graphic Era University. I'm passionate about web
-              development, data analysis, data science, and machine learning.
-            </p>
-
-            <p>
-              I'm always eager to learn and excited to start my career in tech.
-              I’ve gained hands-on experience through projects like building web
-              apps with Python and Flask, analyzing data with Pandas, and
-              creating a traffic sign recognition model using TensorFlow. I'm
-              driven to apply my skills to real-world problems and am
-              enthusiastic about diving into new challenges as I grow in the
-              tech field.
-            </p>
-          </section>
-
-          <!--
-            - service
-          -->
-
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/Ml.png" " alt="design icon"
-                  width="40" />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Machine Learning</h4>
-
-                  <p class="service-item-text">
-                    Creating and refining machine learning models for
-                    data-driven solutions
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/WEB.png"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  <p class="service-item-text">
-                    Designing and developing user-friendly web applications.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/DS.png"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Data Science</h4>
-
-                  <p class="service-item-text">
-                    Analyzing data to uncover insights and inform
-                    decision-making."
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/DBMS.png"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">
-                    Database Management System
-                  </h4>
-
-                  <p class="service-item-text">
-                    Designing and managing databases for efficient data storage
-                    and retrieval
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!--
-            - testimonials
-          -->
-
-          <!--
-            - testimonials modal
-          -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-
-          <!--
-            - clients
-          -->
-        </article>
-
-        <!--
-          - #RESUME
-        -->
-
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-            <iframe
-              style="margin-left: 2%; border: none"
-              src="assets/Resume.pdf#toolbar=0"
-              height="980"
-              width="800"
-            ></iframe>
-          </header>
-        </article>
-
-        <!--
-          - #PORTFOLIO
-        -->
-
-        <article class="portfolio" data-page="projects">
-          <header>
-            <h2 class="h2 article-title">Projects</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://github.com/Anshi2003/TrafficSign-CNN">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/Git.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-                </a>
-
-                <h3 class="project-title">
-                  Traffic-Signs Recognition using CNN and Keras
-                </h3>
-                <p class="project-category">Machine Learning</p>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-          - #CONTACT
-        -->
-
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
-
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54941.877707071154!2d77.95778062673877!3d30.31649527672532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929b8f3fa1637%3A0x86dd89b4b6e22512!2sDehradun%2C%20Uttarakhand%2C%20India!5e0!3m2!1sen!2sus!4v1690568842654!5m2!1sen!2sus"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </section>
-
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
-
-            <form action="#" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
-
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section>
-        </article>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anshi | Tech-Driven Growth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --neon-green: #00ff9d;
+    --neon-pink: #ff2d78;
+    --neon-blue: #00d4ff;
+    --neon-yellow: #ffe600;
+    --bg: #050508;
+    --bg2: #0a0a12;
+    --bg3: #0f0f1a;
+    --text: #e0e0ff;
+    --muted: #555577;
+    --card: #0d0d1a;
+    --border: rgba(0,255,157,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* CUSTOM CURSOR */
+  .cursor {
+    width: 12px; height: 12px;
+    background: var(--neon-green);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s, width 0.2s, height 0.2s, background 0.2s;
+    box-shadow: 0 0 15px var(--neon-green), 0 0 30px var(--neon-green);
+  }
+  .cursor-ring {
+    width: 36px; height: 36px;
+    border: 1px solid var(--neon-green);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: all 0.15s ease;
+    opacity: 0.5;
+  }
+
+  /* SCANLINES */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,157,0.012) 2px, rgba(0,255,157,0.012) 4px);
+    pointer-events: none;
+    z-index: 9990;
+  }
+
+  /* NOISE OVERLAY */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9989;
+    opacity: 0.3;
+  }
+
+  /* ===== SCROLL-FOLLOWING AIRPLANE ===== */
+  .scroll-plane {
+    position: fixed;
+    z-index: 9000;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    filter: drop-shadow(0 0 12px var(--neon-green)) drop-shadow(0 0 30px rgba(0,255,157,0.4));
+  }
+  .scroll-plane svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* Airplane trail particles */
+  .plane-trail-particle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 8999;
+    border-radius: 50%;
+    background: var(--neon-green);
+  }
+
+  /* ===== PARALLAX SECTIONS ===== */
+  .parallax-section {
+    position: relative;
+    overflow: hidden;
+  }
+  .parallax-bg {
+    position: absolute;
+    inset: -100px;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  /* Floating parallax orbs */
+  .parallax-orb {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    will-change: transform;
+    filter: blur(60px);
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: flex-end; /* Aligned to right since logo is removed */
+    align-items: center;
+    background: rgba(5,5,8,0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.3s, padding 0.3s;
+  }
+  nav.scrolled {
+    padding: 14px 60px;
+    background: rgba(5,5,8,0.95);
+    border-bottom-color: rgba(0,255,157,0.25);
+  }
+
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 1px;
+    background: var(--neon-green);
+    transition: width 0.3s;
+    box-shadow: 0 0 8px var(--neon-green);
+  }
+  .nav-links a:hover { color: var(--neon-green); }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* HERO */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 120px 60px 60px;
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,157,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,157,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    animation: gridMove 20s linear infinite;
+  }
+  @keyframes gridMove {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(60px); }
+  }
+
+  /* GLITCH EFFECT */
+  .glitch {
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 900;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+  }
+  .glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .glitch::before {
+    color: var(--neon-pink);
+    animation: glitch1 3s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  .glitch::after {
+    color: var(--neon-blue);
+    animation: glitch2 3s infinite;
+    clip-path: polygon(0 66%, 100% 66%, 100% 100%, 0 100%);
+  }
+  @keyframes glitch1 {
+    0%, 90%, 100% { transform: translateX(0); }
+    92% { transform: translateX(-4px); }
+    94% { transform: translateX(4px); }
+    96% { transform: translateX(-2px); }
+  }
+  @keyframes glitch2 {
+    0%, 88%, 100% { transform: translateX(0); }
+    90% { transform: translateX(4px); }
+    93% { transform: translateX(-4px); }
+    96% { transform: translateX(2px); }
+  }
+
+  .hero-content { position: relative; z-index: 2; max-width: 800px; }
+  .hero-tag {
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    color: var(--neon-green);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-tag::before {
+    content: '';
+    width: 40px; height: 1px;
+    background: var(--neon-green);
+    box-shadow: 0 0 8px var(--neon-green);
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    color: var(--muted);
+    margin-top: 24px;
+    line-height: 1.7;
+    max-width: 600px;
+  }
+  .hero-sub .plane-hint {
+    color: var(--neon-green);
+    opacity: 0.7;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .hero-cta {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .btn-primary {
+    padding: 14px 32px;
+    background: transparent;
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, box-shadow 0.3s;
+    cursor: none;
+  }
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--neon-green);
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    z-index: -1;
+  }
+  .btn-primary:hover { color: var(--bg); box-shadow: 0 0 30px rgba(0,255,157,0.3); }
+  .btn-primary:hover::before { transform: translateX(0); }
+
+  /* SCROLLING TEXT MARQUEE */
+  .marquee-section {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    overflow: hidden;
+    background: var(--bg2);
+    position: relative;
+  }
+  .marquee-track {
+    display: flex;
+    gap: 60px;
+    animation: marquee 20s linear infinite;
+    white-space: nowrap;
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .marquee-item {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    color: var(--muted);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+  }
+  .marquee-item span {
+    color: var(--neon-green);
+    font-size: 1rem;
+  }
+
+  /* SECTIONS */
+  section { padding: 120px 60px; position: relative; }
+
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 5px;
+    color: var(--neon-green);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+  .section-title .accent { color: var(--neon-green); }
+  .section-title .accent-pink { color: var(--neon-pink); }
+
+  /* ABOUT */
+  #about { background: var(--bg2); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .about-text p {
+    color: var(--muted);
+    line-height: 1.9;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+  .about-text p strong { color: var(--neon-green); }
+
+  /* TERMINAL REPLACEMENT FOR STATS */
+  .terminal-box {
+    background: #030305;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,255,157,0.05);
+  }
+  .terminal-header {
+    background: #0a0a12;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .terminal-dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot-red { background: #ff5f56; }
+  .dot-yellow { background: #ffbd2e; }
+  .dot-green { background: #27c93f; }
+  .terminal-title { 
+    margin-left: auto; margin-right: auto; 
+    font-family: 'Space Mono', monospace; 
+    font-size: 0.7rem; color: var(--muted); 
+    padding-right: 48px; /* To center align visually with dots on left */
+  }
+  .terminal-body {
+    padding: 32px 24px;
+    font-size: 0.85rem;
+    line-height: 2;
+    color: var(--text);
+  }
+  .prompt { color: var(--neon-green); margin-right: 10px;}
+  .terminal-output { color: var(--muted); padding-left: 24px; font-size: 0.8rem;}
+  .terminal-output .highlight { color: var(--neon-blue); }
+  .cursor-blink {
+    display: inline-block;
+    width: 8px; height: 16px;
+    background: var(--neon-green);
+    animation: blink 1s step-end infinite;
+    vertical-align: middle;
+    margin-left: 4px;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* WHY ME */
+  #why { background: var(--bg); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    margin-top: 60px;
+  }
+  .why-item {
+    padding: 40px 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: border-color 0.3s, transform 0.3s;
+    cursor: none;
+  }
+  .why-item:hover {
+    border-color: rgba(0,255,157,0.4);
+    transform: translateY(-6px);
+  }
+  .why-num {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(0,255,157,0.15);
+    margin-bottom: 20px;
+  }
+  .why-item h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: var(--neon-green);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+  .why-item p {
+    font-size: 0.72rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  /* CONTACT */
+  #contact {
+    background: var(--bg3);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #contact::before {
+    content: 'CONNECT';
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18vw;
+    font-weight: 900;
+    color: rgba(0,255,157,0.02);
+    letter-spacing: 20px;
+    z-index: 0;
+  }
+  .contact-content { position: relative; z-index: 1; }
+  .contact-tagline {
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    color: var(--neon-green);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .contact-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2.5rem, 7vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  
+  /* NEON GLOW PULSE */
+  @keyframes neonPulse {
+    0%, 100% { text-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green); }
+    50% { text-shadow: 0 0 20px var(--neon-green), 0 0 40px var(--neon-green), 0 0 80px var(--neon-green); }
+  }
+  .neon-text { animation: neonPulse 3s ease-in-out infinite; }
+
+  /* FOOTER */
+  footer {
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 32px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 2px;
+  }
+  footer a { color: var(--muted); text-decoration: none; transition: color 0.3s; }
+  footer a:hover { color: var(--neon-green); }
+
+  /* SCROLL REVEAL */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+  .reveal-delay-5 { transition-delay: 0.5s; }
+
+  /* PARALLAX FLOATING ELEMENTS */
+  .float-element {
+    position: absolute;
+    pointer-events: none;
+    will-change: transform;
+  }
+  .float-ring {
+    border: 1px solid rgba(0,255,157,0.1);
+    border-radius: 50%;
+  }
+  .float-cross {
+    color: rgba(0,255,157,0.08);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .float-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0,255,157,0.1), transparent);
+  }
+
+  /* Smooth scroll indicator */
+  .scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: var(--neon-green);
+    box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+    z-index: 9999;
+    transition: width 0.1s linear;
+  }
+
+  /* MOBILE */
+  @media (max-width: 900px) {
+    nav { padding: 16px 24px; justify-content: center; }
+    .nav-links { display: none; }
+    section, #hero { padding: 80px 24px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr 1fr; }
+    footer { flex-direction: column; gap: 12px; text-align: center; }
+    .glitch { font-size: clamp(2.5rem, 12vw, 5rem); }
+    .scroll-plane { display: none; }
+  }
+  @media (max-width: 600px) {
+    .why-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="scroll-indicator" id="scrollIndicator"></div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="scroll-plane" id="scrollPlane">
+  <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="8,60 72,40 8,10 22,40" fill="rgba(0,255,157,0.12)" stroke="#00ff9d" stroke-width="1.5" stroke-linejoin="round"/>
+    <line x1="8" y1="60" x2="22" y2="40" stroke="#00ff9d" stroke-width="0.7" opacity="0.6"/>
+    <line x1="8" y1="10" x2="22" y2="40" stroke="#00ff9d" stroke-width="0.7" opacity="0.6"/>
+    <polygon points="8,10 72,40 22,40" fill="rgba(0,255,157,0.06)" stroke="none"/>
+    <polygon points="8,60 72,40 8,10 22,40" fill="none" stroke="rgba(0,255,157,0.2)" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="72" cy="40" r="3" fill="rgba(0,255,157,0.5)">
+      <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="6" cy="40" r="1.5" fill="#00ff9d" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </svg>
+</div>
+
+<canvas id="trailCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:8998;"></canvas>
+
+<nav id="mainNav">
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#why">Why Me</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero" class="parallax-section">
+  <div class="hero-grid"></div>
+
+  <div class="parallax-bg" data-speed="0.03">
+    <div class="float-element float-ring" style="width:200px;height:200px;top:15%;right:10%;"></div>
+    <div class="float-element float-ring" style="width:80px;height:80px;top:60%;right:25%;border-color:rgba(255,45,120,0.08);"></div>
+    <div class="float-element float-cross" style="top:25%;right:30%;">+</div>
+    <div class="float-element float-cross" style="top:70%;right:8%;color:rgba(0,212,255,0.06);">×</div>
+    <div class="float-element float-line" style="width:200px;top:45%;right:5%;"></div>
+  </div>
+  <div class="parallax-bg" data-speed="0.06">
+    <div class="float-element float-ring" style="width:120px;height:120px;top:30%;right:20%;border-color:rgba(0,212,255,0.06);"></div>
+    <div class="float-element" style="top:55%;right:35%;width:4px;height:4px;background:var(--neon-green);border-radius:50%;opacity:0.3;box-shadow:0 0 10px var(--neon-green);"></div>
+  </div>
+
+  <div class="parallax-orb" data-speed="0.04" style="width:400px;height:400px;top:-10%;right:-5%;background:rgba(0,255,157,0.03);"></div>
+  <div class="parallax-orb" data-speed="0.07" style="width:300px;height:300px;bottom:10%;left:-5%;background:rgba(255,45,120,0.02);"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag reveal">Open to work</div>
+    <h1 class="glitch reveal reveal-delay-1" data-text="TECH-DRIVEN GROWTH">TECH-DRIVEN<br>GROWTH</h1>
+    <p class="hero-sub reveal reveal-delay-2">
+      I’m <strong style="color: var(--neon-green)">Anshi</strong> — a tech-driven problem solver building automation, data systems, and growth-focused digital products.
+      <span class="plane-hint">✈ Yes, that's my plane — keep scrolling to see where it goes!</span>
+    </p>
+    <div class="hero-cta reveal reveal-delay-3">
+      <a href="#about" class="btn-primary">Learn More</a>
+      <a href="#contact" class="btn-secondary">Let's Connect →</a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-item"><span>✦</span> Automation</div>
+    <div class="marquee-item"><span>✦</span> Large-Scale Web Scraping</div>
+    <div class="marquee-item"><span>✦</span> Python</div>
+    <div class="marquee-item"><span>✦</span> Data Systems</div>
+    <div class="marquee-item"><span>✦</span> Applied AI & Machine Learning</div>
+    <div class="marquee-item"><span>✦</span> Growth Products</div>
+    <div class="marquee-item"><span>✦</span> Automation</div>
+    <div class="marquee-item"><span>✦</span> Large-Scale Web Scraping</div>
+    <div class="marquee-item"><span>✦</span> Python</div>
+    <div class="marquee-item"><span>✦</span> Data Systems</div>
+    <div class="marquee-item"><span>✦</span> Applied AI & Machine Learning</div>
+    <div class="marquee-item"><span>✦</span> Growth Products</div>
+  </div>
+</div>
+
+<section id="about" class="parallax-section">
+  <div class="parallax-orb" data-speed="0.05" style="width:500px;height:500px;top:-20%;right:-15%;background:rgba(0,212,255,0.02);"></div>
+  <div class="parallax-orb" data-speed="0.03" style="width:250px;height:250px;bottom:5%;left:10%;background:rgba(0,255,157,0.02);"></div>
+
+  <div class="section-label reveal">01 // About me</div>
+  <div class="about-grid">
+    <div class="about-text">
+      <h2 class="section-title reveal">Who said tech systems<br>have to be <span class="accent">ordinary?</span></h2>
+      <p class="reveal reveal-delay-1">Hi, I’m <strong>Anshi</strong> — a tech-driven builder at KicksMachine specialising in automation, large-scale web scraping, and performance-focused systems.</p>
+      <p class="reveal reveal-delay-2">I’m passionate about product thinking and growth, always looking beyond the code to understand how technology drives impact. With strong communication skills and a collaborative mindset, I enjoy aligning ideas, people, and execution to move projects forward.</p>
+      <p class="reveal reveal-delay-3">No chaos. No inefficiency. Just smart systems built to scale.</p>
+      <div class="hero-cta reveal reveal-delay-4">
+        <a href="#contact" class="btn-primary">Connect with me</a>
       </div>
-    </main>
+    </div>
+    
+    <div class="terminal-box reveal reveal-delay-2">
+      <div class="terminal-header">
+        <div class="terminal-dot dot-red"></div>
+        <div class="terminal-dot dot-yellow"></div>
+        <div class="terminal-dot dot-green"></div>
+        <div class="terminal-title">anshi_core_systems.sh</div>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">~ $</span> ./initialize_skills.sh</p>
+        <p class="terminal-output">> Loading modules...</p>
+        <p class="terminal-output">> <span class="highlight">Module 1:</span> Advanced Automation</p>
+        <p class="terminal-output">> <span class="highlight">Module 2:</span> Large-Scale Web Scraping</p>
+        <p class="terminal-output">> <span class="highlight">Module 3:</span> Data Systems Architecture</p>
+        <p class="terminal-output">> <span class="highlight">Module 4:</span> Applied AI & Machine Learning</p>
+        <p class="terminal-output">> <span class="highlight">Module 5:</span> Performance Optimisation</p>
+        <p style="margin-top: 16px;"><span class="prompt">~ $</span> status --check</p>
+        <p class="terminal-output" style="color: var(--neon-green)">> Status: Ready to scale.</p>
+        <p style="margin-top: 16px;"><span class="prompt">~ $</span> <span class="cursor-blink"></span></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!--
-      - custom js link
-    -->
-    <script src="./assets/js/script.js"></script>
+<section id="why" class="parallax-section">
+  <div class="parallax-orb" data-speed="0.04" style="width:350px;height:350px;bottom:-10%;right:10%;background:rgba(0,212,255,0.015);"></div>
+  <div class="section-label reveal">02 // Why work with me</div>
+  <h2 class="section-title reveal">The <span class="accent">unfair</span> advantage</h2>
+  <div class="why-grid">
+    <div class="why-item reveal reveal-delay-1">
+      <div class="why-num">01</div>
+      <h3>Jack of All Trades</h3>
+      <p>Web development, AI, machine learning, automation, large-scale web scraping — I’ve explored multiple domains and understand how they connect. I combine skills to build smarter, more efficient systems.</p>
+    </div>
+    <div class="why-item reveal reveal-delay-2">
+      <div class="why-num">02</div>
+      <h3>Quick Learner</h3>
+      <p>Technology evolves fast — and so do I. I adapt quickly to new tools, frameworks, and market shifts, picking up what’s needed and applying it immediately to real-world problems.</p>
+    </div>
+    <div class="why-item reveal reveal-delay-3">
+      <div class="why-num">03</div>
+      <h3>Problem Solver</h3>
+      <p>I’m driven by complex challenges. Whether it’s optimising workflows, debugging systems, or structuring messy data, I break problems down logically and rebuild them into clean, scalable solutions.</p>
+    </div>
+    <div class="why-item reveal reveal-delay-4">
+      <div class="why-num">04</div>
+      <h3>Execution Mindset</h3>
+      <p>Ideas are great — execution is better. I focus on shipping, refining, and improving continuously. I prioritise results over noise and make sure things actually get done.</p>
+    </div>
+    <div class="why-item reveal reveal-delay-5">
+      <div class="why-num">05</div>
+      <h3>Growth & Tech Explorer</h3>
+      <p>I stay up to date with emerging tech, AI advancements, and market trends. I enjoy experimenting with new tools and approaches, always looking for smarter ways to build, automate, and scale.</p>
+    </div>
+  </div>
+</section>
 
-    <!--
-      - ionicon link
-    -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+<section id="contact" class="parallax-section">
+  <div class="parallax-orb" data-speed="0.05" style="width:500px;height:500px;top:-20%;left:30%;background:rgba(0,255,157,0.015);"></div>
+  <div class="contact-content">
+    <div class="contact-tagline reveal">Let's build something unforgettable</div>
+    <h2 class="contact-title reveal neon-text"><span style="color:var(--neon-green)">LET'S</span><br>CONNECT.</h2>
+    <div class="hero-cta reveal reveal-delay-2" style="justify-content:center">
+      <a href="https://www.linkedin.com/in/anshi-negi/" target="_blank" class="btn-primary">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div></div> <span>© 2025 Anshi. Built to scale.</span>
+  <div style="display:flex;gap:24px">
+    <a href="https://www.linkedin.com/in/anshi-negi/" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<script>
+  // ===== CUSTOM CURSOR =====
+  const cursor = document.getElementById('cursor');
+  const cursorRing = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top = my + 'px';
+  });
+
+  function animateRing() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    cursorRing.style.left = rx + 'px';
+    cursorRing.style.top = ry + 'px';
+    requestAnimationFrame(animateRing);
+  }
+  animateRing();
+
+  document.querySelectorAll('a, button, .why-item, .terminal-box').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width = '20px';
+      cursor.style.height = '20px';
+      cursor.style.background = 'var(--neon-pink)';
+      cursor.style.boxShadow = '0 0 15px var(--neon-pink), 0 0 30px var(--neon-pink)';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width = '12px';
+      cursor.style.height = '12px';
+      cursor.style.background = 'var(--neon-green)';
+      cursor.style.boxShadow = '0 0 15px var(--neon-green), 0 0 30px var(--neon-green)';
+    });
+  });
+
+  // ===== SCROLL-FOLLOWING AIRPLANE =====
+  const plane = document.getElementById('scrollPlane');
+  const trailCanvas = document.getElementById('trailCanvas');
+  const trailCtx = trailCanvas.getContext('2d');
+
+  function resizeCanvas() {
+    trailCanvas.width = window.innerWidth;
+    trailCanvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  const flightPath = [
+    { progress: 0.00, x: 85, y: 25, rotation: -10 },
+    { progress: 0.15, x: 75, y: 40, rotation: 15 },
+    { progress: 0.30, x: 50, y: 20, rotation: -20 },
+    { progress: 0.45, x: 30, y: 55, rotation: 25 },
+    { progress: 0.60, x: 70, y: 35, rotation: -15 },
+    { progress: 0.75, x: 85, y: 60, rotation: 10 },
+    { progress: 0.85, x: 55, y: 30, rotation: -25 },
+    { progress: 1.00, x: 25, y: 50, rotation: 20 },
+  ];
+
+  function lerp(a, b, t) {
+    return a + (b - a) * t;
+  }
+
+  function smoothstep(t) {
+    return t * t * (3 - 2 * t);
+  }
+
+  function getPlanePosition(scrollProgress) {
+    let i = 0;
+    for (let j = 0; j < flightPath.length - 1; j++) {
+      if (scrollProgress >= flightPath[j].progress && scrollProgress <= flightPath[j + 1].progress) {
+        i = j;
+        break;
+      }
+    }
+    if (scrollProgress >= flightPath[flightPath.length - 1].progress) {
+      i = flightPath.length - 2;
+    }
+
+    const wp1 = flightPath[i];
+    const wp2 = flightPath[i + 1];
+    const range = wp2.progress - wp1.progress;
+    const localT = range > 0 ? (scrollProgress - wp1.progress) / range : 0;
+    const t = smoothstep(Math.min(1, Math.max(0, localT)));
+
+    return {
+      x: lerp(wp1.x, wp2.x, t),
+      y: lerp(wp1.y, wp2.y, t),
+      rotation: lerp(wp1.rotation, wp2.rotation, t)
+    };
+  }
+
+  const trailHistory = [];
+  const MAX_TRAIL = 40;
+  let currentPlaneX = 0, currentPlaneY = 0;
+  let targetPlaneX = 0, targetPlaneY = 0;
+  let currentRotation = 0, targetRotation = 0;
+
+  function updatePlane() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollProgress = docHeight > 0 ? scrollTop / docHeight : 0;
+
+    const pos = getPlanePosition(scrollProgress);
+    targetPlaneX = (pos.x / 100) * window.innerWidth;
+    targetPlaneY = (pos.y / 100) * window.innerHeight;
+    targetRotation = pos.rotation;
+
+    currentPlaneX += (targetPlaneX - currentPlaneX) * 0.08;
+    currentPlaneY += (targetPlaneY - currentPlaneY) * 0.08;
+    currentRotation += (targetRotation - currentRotation) * 0.08;
+
+    plane.style.left = currentPlaneX + 'px';
+    plane.style.top = currentPlaneY + 'px';
+    plane.style.transform = `translate(-50%, -50%) rotate(${currentRotation}deg)`;
+
+    trailHistory.push({ x: currentPlaneX, y: currentPlaneY, time: Date.now() });
+    if (trailHistory.length > MAX_TRAIL) trailHistory.shift();
+
+    trailCtx.clearRect(0, 0, trailCanvas.width, trailCanvas.height);
+    if (trailHistory.length > 2) {
+      trailCtx.beginPath();
+      trailCtx.moveTo(trailHistory[0].x, trailHistory[0].y);
+      for (let i = 1; i < trailHistory.length; i++) {
+        trailCtx.lineTo(trailHistory[i].x, trailHistory[i].y);
+      }
+      trailCtx.strokeStyle = 'rgba(0,255,157,0.15)';
+      trailCtx.lineWidth = 2;
+      trailCtx.shadowColor = '#00ff9d';
+      trailCtx.shadowBlur = 8;
+      trailCtx.stroke();
+
+      for (let i = 0; i < trailHistory.length; i++) {
+        const alpha = (i / trailHistory.length) * 0.3;
+        const size = (i / trailHistory.length) * 2.5;
+        trailCtx.beginPath();
+        trailCtx.arc(trailHistory[i].x, trailHistory[i].y, size, 0, Math.PI * 2);
+        trailCtx.fillStyle = `rgba(0,255,157,${alpha})`;
+        trailCtx.shadowBlur = 4;
+        trailCtx.fill();
+      }
+      trailCtx.shadowBlur = 0;
+    }
+
+    requestAnimationFrame(updatePlane);
+  }
+  updatePlane();
+
+  // ===== PARALLAX EFFECT =====
+  function updateParallax() {
+    document.querySelectorAll('.parallax-orb').forEach(orb => {
+      const speed = parseFloat(orb.dataset.speed) || 0.05;
+      const rect = orb.closest('section, #hero')?.getBoundingClientRect();
+      if (rect) {
+        const sectionCenter = rect.top + rect.height / 2;
+        const offset = sectionCenter * speed;
+        orb.style.transform = `translateY(${-offset}px)`;
+      }
+    });
+
+    document.querySelectorAll('.parallax-bg').forEach(bg => {
+      const speed = parseFloat(bg.dataset.speed) || 0.03;
+      const rect = bg.closest('section, #hero')?.getBoundingClientRect();
+      if (rect) {
+        const offset = rect.top * speed;
+        bg.style.transform = `translateY(${-offset}px)`;
+      }
+    });
+
+    requestAnimationFrame(updateParallax);
+  }
+  updateParallax();
+
+  // ===== SCROLL PROGRESS BAR =====
+  const scrollIndicator = document.getElementById('scrollIndicator');
+  function updateScrollProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    scrollIndicator.style.width = progress + '%';
+  }
+  window.addEventListener('scroll', updateScrollProgress);
+
+  // ===== SCROLL REVEAL =====
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+
+  // ===== NAV scroll effect =====
+  const mainNav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    mainNav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+</script>
+</body>
 </html>
